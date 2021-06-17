@@ -4,6 +4,8 @@ aws configure --profile VC_AWS_PROFILE set aws_secret_access_key_id nsl4s5LG06PO
 aws configure --profile VC_AWS_PROFILE set default_region_name us-east-1
 aws configure --profile VC_AWS_PROFILE set default_output_format none
 
+npm install
+sudo npm install gzipper -g 
 REACT_APP_ENV=production npm run build || exit;
 
 zip -r build.zip build/;
