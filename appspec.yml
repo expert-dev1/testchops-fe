@@ -3,7 +3,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /var/www/vidchops
+    destination: /var/www/vidchops-fe
 hooks:
   deploy:
     - location: deploy.sh
