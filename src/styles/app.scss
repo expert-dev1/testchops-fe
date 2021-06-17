@@ -1,0 +1,242 @@
+
+@import "~materialize-css/sass/components/color-variables";
+
+$color-placeholder: #00000055;
+
+$color-red: #ab322d;
+$color-red-darker: #7e2c2a;
+$color-grey: #d9d9d9;
+$color-darkgrey: #1f1f1f;
+$color-green: #82b150;
+$color-green-darker: #628147;
+$color-white: #FFFFFF;
+$color-black: #000000;
+
+$input-focus-color: $color-red;
+$radio-border: 2px solid $color-green;
+
+@import "~materialize-css/sass/materialize";
+@import "scrollbar";
+@import "main-page";
+@import "~react-toastify/dist/ReactToastify.min.css";
+@import '~dragula/dist/dragula.min.css';
+@import '~react-date-range/dist/styles.css';
+@import '~react-date-range/dist/theme/default.css';
+@import '~react-circular-progressbar/dist/styles.css';
+
+.color-green {
+  background-color: $color-green;
+}
+
+.error{
+  border-bottom: 1px solid #ee3f43 !important;
+}
+
+html, body, #app, #app>div {
+  height: 100%
+}
+
+body {
+  font-size: 14px;
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+
+.card-title {
+  font-size: 1.4em !important;
+}
+
+#root {
+  background-color: $color-grey;
+  min-height: 100%;
+}
+
+.unread {
+  background-color: $color-green;
+}
+
+.loginPaneLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-grey;
+  min-height: 100vh !important;;
+  height: auto;
+  width: 100%;
+  padding: 0;
+}
+
+.loginPaneRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-darkgrey;
+  color: white;
+  min-height: 100vh !important;
+  height: auto;
+  width: 100%;
+  padding: 0;
+}
+
+.loginPaneRight .select-wrapper {
+  border-radius: 5px !important;
+  width: 87% !important;
+  height: 50px;
+  margin: auto !important;
+  padding: 5px 10px !important;
+  color: white;
+  background: #eeeeee;
+}
+
+.loginPaneRight a {
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.nav-wrapper {
+  background-color: $color-red;
+}
+
+.avatar {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  border-radius: 100%;
+  background-color: #f5f6f7;
+  color: #929daf;
+  text-transform: uppercase;
+}
+
+.profile-image {
+  vertical-align: middle;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 4px
+}
+
+.round-button {
+  border-radius: 5px !important;
+  width: 80% !important;
+  height: 50px;
+  margin: auto !important;
+  padding: 5px 10px !important;
+}
+
+.border-text-box {
+  border-radius: 5px !important;
+  padding: 5px 10px !important;
+  background-color: #eeeeee !important;
+  width: 80% !important;
+  margin: auto !important;
+}
+
+.border-text-box::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color-placeholder;
+  opacity: 1; /* Firefox */
+}
+.border-text-box:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: $color-placeholder;
+}
+
+.border-text-box::-ms-input-placeholder { /* Microsoft Edge */
+  color: $color-placeholder;
+}
+
+.progress {
+  background-color: $color-red;
+}
+.progress .indeterminate {
+  background-color: $color-red-darker;
+}
+
+.user-card-title {
+  border-bottom: 1px solid lightgray;
+  padding: 24px;
+}
+
+.cards-panel {
+  overflow-x: scroll;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.cards-panel > tbody > tr {
+  vertical-align: top;
+  border: none;
+}
+
+.cards-panel > tbody > tr > td {
+  vertical-align: top;
+  border: none;
+}
+
+.Toastify__progress-bar--default {
+  background: $color-red;
+}
+
+.btn:hover {
+  background-color: $color-green-darker;
+}
+
+
+.btn-danger:hover {
+  background-color: $color-red-darker;
+}
+
+.btn-primary {
+  background-color: $color-green;
+  border-radius: 5px;
+}
+
+.btn-secondary {
+  background-color: $color-grey;
+  border-radius: 5px;
+}
+
+.btn-danger {
+  background-color: $color-red;
+  border-radius: 5px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.comment-tag {
+  color: #ee3f43;
+}
+
+.m_box_me {
+  text-align: right;
+}
+
+.m_box {
+  text-align: left;
+}
+
+.chat_bubble {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  display: inline-block;
+  max-width: 80%;
+}
+
+.chat_bubble a {
+  font-weight: bold;
+  color: royalblue;
+}
+
+.dropdown-content li > a, .dropdown-content li > span {
+  color: $color-darkgrey;
+}

@@ -1,0 +1,1 @@
+export const CARD_CLICKED = Symbol('card_clicked');

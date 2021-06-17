@@ -1,0 +1,151 @@
+
+$color-column-header-bg: #A3A3A3;
+$color-video-request-label: $color-red;
+$color-on-hold-label: $color-red;
+$color-editing-label: #F4CE46;
+$color-qa-label: #faa64b;
+$color-done-label: $color-green;
+$color-repurpose-label: #800080;
+$color-canceled-label: $color-column-header-bg;
+
+.viewAsPanel .input-field {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+.viewAsPanel {
+  margin: 0;
+  padding: 0;
+}
+
+.toggle-panel {
+  margin: 0;
+  padding-bottom: 1.3rem;
+  border-radius: 8px;
+}
+
+.select-view-as {
+  border-radius: 8px;
+}
+.select-view-as .css-yk16xz-control {
+  border-radius: 8px;
+}
+
+.cards-panel .collapsible {
+  border-radius: 8px 8px 6px 6px;
+  border: none;
+}
+
+.cardList .collapsible-body {
+  min-height: 10vh;
+  height: 100%;
+  max-height: 70vh;
+  overflow-y: scroll;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+}
+
+.cardList .collapsible-header {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.video-requests-list > .cardList > .collapsible-header {
+  background-color: $color-video-request-label;
+  color: white;
+}
+.hold-list > .cardList > .collapsible-header {
+  background-color: $color-on-hold-label;
+  color: white;
+}
+.editing-list > .cardList > .collapsible-header {
+  background-color: $color-editing-label;
+  color: white;
+}
+.qa-list > .cardList > .collapsible-header {
+  background-color: $color-qa-label;
+  color: white;
+}
+.done-list > .cardList > .collapsible-header {
+  background-color: $color-done-label;
+  color: white;
+}
+.canceled-list > .cardList > .collapsible-header {
+  background-color: $color-canceled-label;
+  color: white;
+}
+.repurpose-list > .cardList > .collapsible-header {
+  background-color: $color-repurpose-label;
+  color: white;
+}
+
+.request-card-title {
+  border-bottom: 1px solid lightgray;
+  padding: 24px;
+  word-break: break-word;
+  white-space: pre-wrap;
+}
+
+.request-card {
+  min-width: 300px;
+  border-radius: 6px;
+}
+
+.request-card-line {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.request-card-line .col {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.btn-chiclet {
+  padding: 24px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px !important;
+}
+
+.bg-warning {
+  background-color: #faa64b;
+  color: #fff;
+}
+
+.drag-item .is-moving {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+
+.drag-item .is-moved {
+  color: #fff;
+}
+
+.label-column {
+  margin-bottom: 0 !important;
+  padding-left: 3rem;
+}
+
+.label-column label {
+  font-size: 1rem;
+}
+
+#create-card-modal > .modal-content > .col {
+  margin: 0 2rem 2rem;
+}
+#update-card-modal > .modal-content > .col {
+  margin: 0 2rem 2rem;
+}
